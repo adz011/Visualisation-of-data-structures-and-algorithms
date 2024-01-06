@@ -1,0 +1,17 @@
+.button{
+    -fx-text-fill: "blue";
+    /*-fx-background-color: linear-gradient(lightblue, lightgreen);
+
+     */
+}
+.root{
+    /*-fx-background-color: linear-gradient(lightblue, lightgreen);
+
+     */
+}
+.tool-bar{
+    /*-fx-background-color: linear-gradient(lightblue, lightgreen);
+
+     */
+}
+

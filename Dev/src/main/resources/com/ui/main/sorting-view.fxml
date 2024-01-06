@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="borderPane" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.sorting_algorithms.SortingController">
+    <top>
+        <ToolBar layoutY="-1.0" prefHeight="40.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <items>
+                <CheckBox prefWidth="150.0" text = "BubbleSort" fx:id="bubbleSortCheckBox"/>
+                <CheckBox prefWidth="150.0" text = "MergeSort" fx:id="mergeSortCheckBox"/>
+                <CheckBox prefWidth="150.0" text = "QuickSort" fx:id="quickSortCheckBox"/>
+                <ColorPicker fx:id="colorPicker"/>
+                <Button fx:id ="helpAlert" text="Help" onAction="#showHelpAlert"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <GridPane fx:id="grid" gridLinesVisible="true" maxHeight="Infinity" maxWidth="Infinity" prefHeight="312.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <columnConstraints>
+            </columnConstraints>
+            <rowConstraints>
+            </rowConstraints>
+        </GridPane>
+    </center>
+    <bottom>
+        <ToolBar layoutX="32.0" layoutY="227.0" prefHeight="40.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <items>
+                <Button mnemonicParsing="false" text="OneStep" onAction="#playOne" />
+                <Button mnemonicParsing="false" text="Play" onAction="#play" />
+                <Button mnemonicParsing="false" text="Skip" onAction="#skip" />
+                <Button mnemonicParsing="false" text="Stop" onAction="#stop" />
+                <Button mnemonicParsing="false" text="Resume" onAction="#resume" />
+                <Slider fx:id ="changeSpeed" blockIncrement="1" minWidth="400" maxWidth="300" majorTickUnit="1" min = "0.0001" max="30.0001" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="1" snapToTicks="true"/>
+                <TextField fx:id="inputText" promptText="Type an input" />
+                <Button mnemonicParsing="false" text="Submit" fx:id="submitButton" onAction="#submit" />
+                <Button mnemonicParsing="false" text="Randomise" onAction="#randomize" />
+                <Button mnemonicParsing="false" text="Shuffle" onAction="#shuffle" />
+            </items>
+        </ToolBar>
+    </bottom>
+    <right>
+
+    </right>
+
+
+
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.sorting_algorithms.RuntimeController">
+
+    <TabPane fx:id="tabPane" layoutX="-1.0" prefHeight="400.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Runtime">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <BarChart fx:id="Runtime1" prefHeight="373.0" prefWidth="400.0" title="Number of operations per algorithm">
+                    <xAxis>
+                        <CategoryAxis label="Algorithms" side="BOTTOM" tickLabelFill="RED" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis label="Operations" side="LEFT" />
+                    </yAxis>
+                </BarChart>
+            </AnchorPane>
+        </Tab>
+      <effect>
+         <InnerShadow choke="0.45">
+            <color>
+               <Color green="0.07500000298023224" blue="0.25" />
+            </color>
+         </InnerShadow>
+      </effect>
+      <!--<effect>
+         <InnerShadow choke="0.28" radius="15.13" width="41.52">
+            <color>
+               <Color red="0.6166666746139526" blue="1.0" />
+            </color>
+         </InnerShadow>
+      </effect>-->
+
+    </TabPane>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.game_of_life.GridController">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ColorPicker fx:id="deadCellColor" />
+            <ColorPicker fx:id="aliveCellColor">
+               <value>
+                  <Color red="0.2878289520740509" green="0.5441337823867798" blue="0.9868420958518982" />
+               </value></ColorPicker>
+            <Button fx:id ="helpAlert" text="Help" onAction="#showHelpAlert"/>
+         </items></ToolBar>
+
+    </top>
+    <bottom>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="createGrid" mnemonicParsing="false" onAction="#createGrid" text="Create Grid" />
+                <Button fx:id="startButton" mnemonicParsing="false" text="OneStep" />
+                <Button fx:id="playButton" mnemonicParsing="false" text="Play" />
+                <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stop" text="Stop" />
+                <Slider fx:id="changeSpeed" blockIncrement="1" layoutX="52.0" layoutY="354.0" majorTickUnit="1" max="30.0001" min="0.0001" minWidth="400" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1" />
+            </items>
+        </ToolBar>
+    </bottom>
+    <center>
+        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        </GridPane>
+    </center>
+</BorderPane>
